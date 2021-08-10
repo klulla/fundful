@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import HomeScreen from './screens/HomeScreen'
+import './styles/output.css'
+import SignupScreen from './comps/SignupScreen';
+import LoginScreen from './comps/LoginScreen.js';
+import HomeScreen from './comps/HomeScreen';
 
 function App() {
   return (
-    <div className="App">
-        <HomeScreen />
-    </div>
+    <HomeScreen />
   );
 }
 
