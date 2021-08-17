@@ -5,7 +5,7 @@ import { useSpring, animated } from 'react-spring';
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
 
-const HomeScreen = () => {
+const HomeScreen =(props) => {
     return (
         <div>
             <Example />
@@ -26,7 +26,16 @@ const HomeScreen = () => {
                 </select>
                 <button class="w-20 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Search</button>
             </div>
-            <div class="md:flex md:flex-row md:justify-evenly mt-8 xs:flex xs:flex-col xs:w-full xs:justify-center">
+            <div class="md:flex md:flex-row mt-8 md:flex-wrap xs:flex xs:flex-col xs:w-full xs:justify-center">
+                <Card />
+                <Card description=""/>
+                <Card description=""/>
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
                 <Card />
                 <Card />
                 <Card />
