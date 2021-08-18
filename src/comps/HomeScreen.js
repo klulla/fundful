@@ -27,18 +27,15 @@ const HomeScreen =(props) => {
                 <button class="w-20 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Search</button>
             </div>
             <div class="md:flex md:flex-row mt-8 md:flex-wrap xs:flex xs:flex-col xs:w-full xs:justify-center">
-                <Card />
-                <Card description=""/>
-                <Card description=""/>
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+                <Card name="Palo Alto Diner" description="A diner in Palo Alto" email="contact@paloaltodiner.com" category="Restaurant"/>
+                <Card name="Palo Alto Diner" description="A diner in Palo Alto" email="contact@paloaltodiner.com" category="Restaurant"/>
+                <Card name="Palo Alto Diner" description="A diner in Palo Alto" email="contact@paloaltodiner.com" category="Restaurant"/>
+                <Card name="Palo Alto Diner" description="A diner in Palo Alto" email="contact@paloaltodiner.com" category="Restaurant"/>
+                <Card name="Palo Alto Diner" description="A diner in Palo Alto" email="contact@paloaltodiner.com" category="Restaurant"/>
+                <Card name="Palo Alto Diner" description="A diner in Palo Alto" email="contact@paloaltodiner.com" category="Restaurant"/>
+                <Card name="Palo Alto Diner" description="A diner in Palo Alto" email="contact@paloaltodiner.com" category="Restaurant"/>
+                <Card name="Palo Alto Diner" description="A diner in Palo Alto" email="contact@paloaltodiner.com" category="Restaurant"/>
+                <Card name="Palo Alto Diner" description="A diner in Palo Alto" email="contact@paloaltodiner.com" category="Restaurant"/>
             </div>
         
             
