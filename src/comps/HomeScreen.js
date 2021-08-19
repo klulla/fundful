@@ -4,13 +4,22 @@ import Card from './Card'
 import { useSpring, animated } from 'react-spring';
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
+import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import * as geofirestore from 'geofirestore';
+
+
 
 const HomeScreen =(props) => {
+    const [value, setValue] = useState(null);
+
     return (
         <div>
             <Example />
             <div class="flex justify-evenly mt-8">
-                <input class="w-1/2 shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Location"></input>
+            <GooglePlacesAutocomplete selectProps={{value, onChange: setValue, className: "w-1/2 shadow appearance-none rounded h-8 mt-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"}} />
+
                 <select placeholder="Category" class="w-1/5 shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                     <option value="">Select a Category</option>
                     <option value="other">Other</option>
