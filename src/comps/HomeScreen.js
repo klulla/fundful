@@ -12,7 +12,11 @@ import * as geofirestore from 'geofirestore';
 
 
 const HomeScreen =(props) => {
-    const [value, setValue] = useState(null);
+    const [value, setValue] = useState(null)
+    firebase.initializeApp({
+        // ...
+      });
+      
 
     return (
         <div>
